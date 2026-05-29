@@ -10,7 +10,7 @@ async function start() {
     sock.ev.on('creds.update', saveCreds)
     sock.ev.on('connection.update', async ({ connection, qr }) => {
         if (qr) {
-            const code = await sock.requestPairingCode('2349033047066')
+            const code = await sock.requestPairingCode('2349151999259')
             console.log('PAIRING CODE:', code)
         }
         if (connection === 'open') console.log('CONNECTED!')
